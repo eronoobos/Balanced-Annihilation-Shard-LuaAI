@@ -364,7 +364,7 @@ function LosHandler:Plot4(cx, cz, x, z, val, jam)
 	if x ~= 0 and z ~= 0 then
         self:HorizontalLine(cx - x, cz - z, cx + x, val, jam)
     end
-end 
+end
 
 function LosHandler:FillCircle(cx, cz, radius, val, jam)
 	-- convert to grid coordinates
