@@ -6,11 +6,11 @@
 
 This is a Spring mod archive that Balanced Annihilation may put in its dependencies. This is only the configuration for Balanced Annihilation. To run the AI, Balanced Annihilation must also include the [Shard Lua AI base](https://github.com/eronoobos/ShardSpringLua).
 
-### How To
+### Installation
 
-Clone this repository into a Spring archive directory in its games directory.
+Clone this repository into a Spring archive directory in its games directory. `--recursive` must be used to get [the submodule that contains the configuration](https://github.com/eronoobos/BABAR-The-Shardifant).
 ```
-git clone https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/Balanced-Annihilation-Shard-LuaAI.sdd
+git clone --recursive https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/Balanced-Annihilation-Shard-LuaAI.sdd
 ```
 
 Checkout Balanced Annihilation via SVN into a Spring archive directory:
