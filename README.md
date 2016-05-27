@@ -10,7 +10,7 @@ This is a Spring mod archive that Balanced Annihilation may put in its dependenc
 
 Clone this repository into a Spring archive directory in its games directory. `--recursive` must be used to get [the submodule that contains the configuration](https://github.com/eronoobos/BABAR-The-Shardifant).
 ```
-git clone --recursive https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/Balanced-Annihilation-Shard-LuaAI.sdd
+git clone --recursive https://github.com/eronoobos/Balanced-Annihilation-Shard-LuaAI.git ~/.spring/games/Balanced-Annihilation-Shard-LuaAI.sdd
 ```
 
 Checkout Balanced Annihilation via SVN into a Spring archive directory:
