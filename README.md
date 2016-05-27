@@ -22,7 +22,7 @@ or
 
 Extract Balanced Annihilation from the latest archive on springfiles.com (at time of writing, [version 9.35](http://springfiles.com/spring/games/balanced-annihilation-84)) into a Spring archive directory.
 
-Add this mod as a dependency to Balanced Annihilation's modinfo.lua, and change the mod's version to "shard" or something else, to differenciate it from the unmodified game version:
+In BA.sdd/modinfo.lua add this mod as a dependency and change Balanced Annihilation's version to "shard" or something else, to differenciate it from the unmodified game version:
 ```
 return {
   name='Balanced Annihilation',
