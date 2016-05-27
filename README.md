@@ -8,12 +8,21 @@ This is a Spring mod archive that Balanced Annihilation may put in its dependenc
 
 ### How To
 
-Clone this repository into a Spring archive in its games directory.
+Clone this repository into a Spring archive directory in its games directory.
 ```
 git clone https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/Balanced-Annihilation-Shard-LuaAI.sdd
 ```
 
-Add this mod as a dependency to Balanced Annihilation's modinfo.lua.
+Checkout Balanced Annihilation via SVN into a Spring archive directory:
+```
+svn checkout http://imolarpg.dyndns.org/svn/trunk ~/.spring/games/BA.sdd
+```
+
+or
+
+Extract Balanced Annihilation from the latest archive on springfiles.com (at time of writing, [version 9.35](http://springfiles.com/spring/games/balanced-annihilation-84)) into a Spring archive directory.
+
+Add this mod as a dependency to Balanced Annihilation's modinfo.lua, and change the mod's version to "shard" or something else, to differenciate it from the unmodified game version:
 ```
 return {
   name='Balanced Annihilation',
@@ -31,4 +40,9 @@ return {
 }
 ```
 
-The first dependency line, `"Shard LuaAI $VERSION"`, is the Shard Lua AI base.
+The first dependency line, `"Shard LuaAI $VERSION"`, is the Shard Lua AI base, which must be cloned into place:
+```
+git clone https://github.com/eronoobos/ShardSpringLua.git ~/.spring/games/ShardSpringLua.sdd
+```
+
+To resulting AI can be found in Spring lobbies under the name "ShardLua <not-versioned>".
